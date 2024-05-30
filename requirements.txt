@@ -11,4 +11,4 @@ pyserial==3.5
 PyYAML==6.0.1
 scp==0.14.5
 six==1.16.0
-textfsm==1.1.4
+textfsm==1.1.3
