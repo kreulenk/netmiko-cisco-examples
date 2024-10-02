@@ -15,6 +15,6 @@ args = parser.parse_args()
 
 for device in devices:
     net_connect = Netmiko(**device)
-    output = net_connect.send_command(args.cmd)
+    output = net_connect.send_command(args.cmd.replace("\"", ""))
     net_connect.disconnect()
     print ("Cmd: " + args.cmd + "\n" + output)
