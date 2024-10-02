@@ -17,4 +17,4 @@ for device in devices:
     net_connect = Netmiko(**device)
     output = net_connect.send_command(args.cmd)
     net_connect.disconnect()
-    print (output)
+    print ("Cmd: " + args.cmd + "\n" + output)
